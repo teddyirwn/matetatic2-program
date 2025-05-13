@@ -36,7 +36,7 @@ export default function DeretGeometri() {
             setHasil(hasil);
             setSubmit(true);
         } catch (error) {
-            // alert("Error: " + error.message);
+            console.log(error)
         }
     }
 
