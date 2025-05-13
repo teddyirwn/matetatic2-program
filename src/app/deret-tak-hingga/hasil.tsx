@@ -15,10 +15,10 @@ export default function Hasil({ hasil, langkah }: { hasil: Item[], langkah: Item
                     {d.label} : {d.nilai}
                 </p>
             ))}
-            <div className="bg-gray-50 rounded-md p-4 inset-shadow-sm mt-4">
+            <div className="bg-gray-50 rounded-md p-4 text-xs md:text-base inset-shadow-sm mt-4">
                 {langkah.map((e, i) => (
                     <div key={i} className="mb-3">
-                        <p className="text-lg font-normal">{e.label} :</p>
+                        <p className="text-md font-semibold">{e.label} :</p>
                         <p>{e.nilai}</p>
                     </div>
                 ))}

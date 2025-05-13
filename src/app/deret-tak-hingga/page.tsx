@@ -36,7 +36,7 @@ export default function DeretTakHingga() {
                 />
                 <hr className={`${!isSubmit ? "hidden" : "md:rotate-90 md:w-20 border-t border-gray-400 my-auto"}`} />
 
-                <div className={`${!isSubmit ? "hidden" : "block"} ml-6`}>
+                <div className={`${!isSubmit ? "hidden" : "block "} md:ml-6`}>
                     <Hasil langkah={langkah} hasil={hasil} />
                 </div>
             </div>
