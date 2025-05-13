@@ -56,7 +56,7 @@ export default function DeretPangkat() {
                     setPangkat={setPangkat}
                 />
 
-                <hr className="md:rotate-90 md:w-32 border-t border-gray-400 my-auto mx-5" />
+                <hr className={`${!isSubmit ? "hidden" : "md:rotate-90 md:w-32 border-t border-gray-400 my-auto mx-5"}`} />
                 <div className={`${!isSubmit ? "hidden" : "block duration-1000 ease-in-out"} `}>
                     {pangkat === 1 && <Hpangkat1 hasil={hasil} />}
                     {pangkat === 2 && <Hpangkat2 hasil={hasil} />}
