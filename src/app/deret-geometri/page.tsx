@@ -35,7 +35,7 @@ export default function DeretGeometri() {
             setLangkah(langkah);
             setHasil(hasil);
             setSubmit(true);
-        } catch (error: any) {
+        } catch (error) {
             // alert("Error: " + error.message);
         }
     }

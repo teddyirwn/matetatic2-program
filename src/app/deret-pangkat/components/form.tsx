@@ -2,7 +2,7 @@ import { useRouter } from 'next/navigation';
 import React from 'react'
 
 export default function FormComponent({ handleSubmit, setN, pangkat, setPangkat }:
-    { handleSubmit: React.FormEventHandler, setN: any, pangkat: number, setPangkat: any }) {
+    { handleSubmit: React.FormEventHandler, setN: React.Dispatch<React.SetStateAction<number>>, pangkat: number, setPangkat: React.Dispatch<React.SetStateAction<number>> }) {
 
     const router = useRouter();
 

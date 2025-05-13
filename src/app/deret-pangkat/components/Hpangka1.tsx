@@ -5,7 +5,7 @@ interface langkah {
     nilai: string;
 }
 
-export default function Hpangkat1({ n, hasil }: { n: number, hasil: langkah[] }) {
+export default function Hpangkat1({ hasil }: { hasil: langkah[] }) {
     return (
         <div>
             <h1 className="text-xl font-semibold mb-2">Hasil:</h1>

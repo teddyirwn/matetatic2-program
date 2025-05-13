@@ -8,16 +8,16 @@ interface type {
 
 export function aritmatika({ n1, u1, n2, u2, un }: type) {
     // Menghitung beda (b)
-    let b = (u2 - u1) / (n2 - n1);
+    const b = (u2 - u1) / (n2 - n1);
 
     // Menghitung suku pertama (a)
-    let a = u1 - (n1 - 1) * b;
+    const a = u1 - (n1 - 1) * b;
 
     // Menghitung suku ke-un (Un)
-    let Un = a + (un - 1) * b;
+    const Un = a + (un - 1) * b;
 
     // Menghitung jumlah n suku pertama (Sn)
-    let Sn = (un / 2) * (2 * a + (un - 1) * b);
+    const Sn = (un / 2) * (2 * a + (un - 1) * b);
 
     const hasil = [
         { label: "Suku pertama (a)", nilai: `${a}` },

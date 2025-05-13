@@ -1,7 +1,7 @@
 'use client';
 
 import { pangkat1, pangkat2, pangkat3 } from '@/lib/deret_pangkat_asli';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Hpangkat2 from './components/Hpangkat2';
 import Hpangkat1 from './components/Hpangka1';
 import Hpangkat3 from './components/Hpangkat3';
@@ -58,9 +58,9 @@ export default function DeretPangkat() {
 
                 <hr className="md:rotate-90 md:w-32 border-t border-gray-400 my-auto mx-5" />
                 <div className={`${!isSubmit ? "hidden" : "block duration-1000 ease-in-out"} `}>
-                    {pangkat === 1 && <Hpangkat1 n={n} hasil={hasil} />}
-                    {pangkat === 2 && <Hpangkat2 n={n} hasil={hasil} />}
-                    {pangkat === 3 && <Hpangkat3 n={n} hasil={hasil} />}
+                    {pangkat === 1 && <Hpangkat1 hasil={hasil} />}
+                    {pangkat === 2 && <Hpangkat2 hasil={hasil} />}
+                    {pangkat === 3 && <Hpangkat3 hasil={hasil} />}
                 </div>
 
             </div>

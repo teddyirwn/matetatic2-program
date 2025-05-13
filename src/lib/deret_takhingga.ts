@@ -70,9 +70,10 @@ export function takhingga({ u1, u2, n1, n2 }: TakHinggaInput) {
         ];
 
         return { hasil, langkah };
-    } catch (err: any) {
+    } catch (err) {
+        const message = err instanceof Error ? err.message : "Terjadi kesalahan";
         return {
-            hasil: [{ label: "Error", nilai: err.message }],
+            hasil: [{ label: "Error", nilai: message }],
             langkah: [],
         };
     }
